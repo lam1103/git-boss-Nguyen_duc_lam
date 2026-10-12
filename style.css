@@ -1,0 +1,191 @@
+
+/* 1. Cấu hình chung */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: #243047;
+    background-color: #f4f7fb;
+}
+
+/* 2. Phần đầu trang */
+.profile-header {
+    padding: 45px 20px 30px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #183153;
+}
+
+.profile-name {
+    margin: 0;
+    font-size: 36px;
+    line-height: 1.3;
+}
+
+.profile-title {
+    margin: 10px 0 24px;
+    color: #d5e4f7;
+    font-size: 17px;
+}
+
+/* 3. Thanh điều hướng */
+.main-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px 26px;
+}
+
+.main-navigation a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.main-navigation a:hover {
+    color: #83c5ff;
+}
+
+/* 4. Nội dung chính */
+.profile-content {
+    width: min(900px, 90%);
+    margin: 35px auto;
+}
+
+.profile-section {
+    margin-bottom: 24px;
+    padding: 28px 32px;
+    background-color: #ffffff;
+    border: 1px solid #e4eaf2;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(25, 49, 83, 0.04);
+    scroll-margin-top: 20px;
+}
+
+.profile-section h2 {
+    margin: 0 0 18px;
+    padding-bottom: 10px;
+    color: #183153;
+    font-size: 24px;
+    border-bottom: 2px solid #dcecff;
+}
+
+.profile-section h3 {
+    margin: 14px 0 8px;
+    color: #285b91;
+    font-size: 18px;
+}
+
+.profile-section p {
+    margin: 8px 0;
+}
+
+/* 5. Danh sách kỹ năng */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0 22px;
+    padding: 0;
+    list-style: none;
+}
+
+.skill-list li {
+    padding: 6px 14px;
+    color: #24558a;
+    background-color: #eaf3ff;
+    border: 1px solid #d3e6ff;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* 6. Học vấn và dự án */
+.education-item,
+.project-item {
+    padding: 16px 18px;
+    background-color: #f8faff;
+    border-left: 4px solid #3979bd;
+    border-radius: 6px;
+}
+
+.education-item h3,
+.project-item h3 {
+    margin-top: 0;
+}
+
+/* 7. Liên hệ */
+.contact-list {
+    padding-left: 20px;
+}
+
+.contact-section a {
+    color: #2169ad;
+    overflow-wrap: anywhere;
+}
+
+.contact-section a:hover {
+    color: #123c69;
+}
+
+/* 8. Chân trang */
+.profile-footer {
+    padding: 20px;
+    text-align: center;
+    color: #d5e4f7;
+    background-color: #183153;
+}
+
+.profile-footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* 9. Responsive cho điện thoại */
+@media (max-width: 600px) {
+    .profile-header {
+        padding: 32px 16px 24px;
+    }
+
+    .profile-name {
+        font-size: 28px;
+    }
+
+    .profile-title {
+        font-size: 15px;
+    }
+
+    .main-navigation {
+        gap: 10px 16px;
+    }
+
+    .main-navigation a {
+        font-size: 14px;
+    }
+
+    .profile-content {
+        width: 92%;
+        margin: 22px auto;
+    }
+
+    .profile-section {
+        padding: 20px 18px;
+        margin-bottom: 18px;
+    }
+
+    .profile-section h2 {
+        font-size: 21px;
+    }
+
+    .profile-section h3 {
+        font-size: 17px;
+    }
+}
