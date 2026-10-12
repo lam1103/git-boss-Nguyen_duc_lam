@@ -1,14 +1,93 @@
+```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Hồ sơ cá nhân</title>
 </head>
 <body>
-    <section>
-    <h2>Giới thiệu</h2>
-    <p>Đây là trang giới thiệu của chúng tôi.</p>
-</section>
+    <header class="profile-header">
+        <h1 class="profile-name">Nguyễn Đức Lâm</h1>
+        <p class="profile-title">Sinh viên Công nghệ thông tin</p>
+
+        <nav class="main-navigation">
+            <a href="#about">Giới thiệu</a>
+            <a href="#education">Học vấn</a>
+            <a href="#skills">Kỹ năng</a>
+            <a href="#projects">Dự án</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+    </header>
+
+    <main class="profile-content">
+        <section id="about" class="profile-section about-section">
+            <h2>Giới thiệu bản thân</h2>
+            <p>
+                Tôi là sinh viên ngành Công nghệ thông tin tại Đại học Phenikaa.
+                Tôi quan tâm đến lập trình phần mềm, phát triển web và ứng dụng di động.
+                Tôi luôn mong muốn học hỏi kiến thức mới và cải thiện kỹ năng lập trình.
+            </p>
+        </section>
+
+        <section id="education" class="profile-section education-section">
+            <h2>Học vấn</h2>
+            <article class="education-item">
+                <h3>Đại học Phenikaa</h3>
+                <p>Ngành: Công nghệ thông tin</p>
+                <p>Trình độ: Sinh viên đại học</p>
+            </article>
+        </section>
+
+        <section id="skills" class="profile-section skills-section">
+            <h2>Kỹ năng</h2>
+
+            <h3>Ngôn ngữ lập trình</h3>
+            <ul class="skill-list">
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Dart</li>
+            </ul>
+
+            <h3>Công nghệ và cơ sở dữ liệu</h3>
+            <ul class="skill-list">
+                <li>Spring Boot</li>
+                <li>MySQL</li>
+                <li>Thymeleaf</li>
+                <li>Flutter</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="profile-section projects-section">
+            <h2>Dự án cá nhân và học tập</h2>
+
+            <article class="project-item">
+                <h3>Website kết nối gia sư và người học</h3>
+                <p>
+                    Xây dựng website hỗ trợ học viên tìm kiếm gia sư,
+                    gửi yêu cầu học tập và quản lý lịch học.
+                </p>
+                <p>Công nghệ: Java, Spring Boot, MySQL, Thymeleaf.</p>
+            </article>
+        </section>
+
+        <section id="contact" class="profile-section contact-section">
+            <h2>Thông tin liên hệ</h2>
+            <ul class="contact-list">
+                <li>Email: your-email@example.com</li>
+                <li>GitHub:
+                    <a href="https://github.com/lam1103">
+                        github.com/lam1103
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="profile-footer">
+        <p>&copy; 2026 Nguyễn Đức Lâm. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+```
